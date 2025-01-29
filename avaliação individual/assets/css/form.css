@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "inter", sans-serif;
+}
+
+.container-local h3 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espaço entre os campos */
+}
+
+label {
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 5px; /* Espaço entre o label e o campo */
+    font-weight: bold; /* Deixa o texto do label em negrito */
+}
+
+input[type="text"] {
+    width: 100%; /* Faz o campo ocupar toda a largura disponível */
+    width: 50%;
+    padding: 5px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    border: 2px solid #000000; /* Borda do campo */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #E2E2E2;
+}
+
+input.half-width {
+    width: 30%; /* Largura do campo "Idade" */
+    display: inline-block; /* Permite que o campo fique ao lado de outro */
+}
+
+input[type="submit"] {
+    padding: 10px 15px; /* Espaçamento interno do botão */
+    font-size: 16px; /* Tamanho da fonte do botão */
+    background-color: #28a745; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+}
+
+input[type="submit"]:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+}
+
+.container-local h3{
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+.mapa{
+    display: flex;
+    width: 400px;
+    height: 400px;
+}
