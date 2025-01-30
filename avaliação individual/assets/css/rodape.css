@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: "inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    list-style: none;
+}
+
+#rodape{
+    margin-top: 180px; /* Espaço de 200px do topo */
+    background-color: #e2e2e2; /* Cor de fundo do rodapé */
+    padding: 50px 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+}
+
+.colunas-rodape h4 {
+    margin-bottom: 10px; /* Margem abaixo do título */
+}

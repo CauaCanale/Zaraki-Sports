@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/form.css">
+    <link rel="stylesheet" href="./assets/css/rodape.css">
 </head>
 
 <body>
@@ -23,7 +24,6 @@
 
             <ul class="menu">
                 <li><a href="#carros-destaque">Carros</a></li>
-                <li><a href="#">Avaliações</a></li>
                 <li><a href="#sinopse-loja">Origem</a></li>
                 <li><a href="#local-loja">Suporte</a></li>
 
@@ -107,7 +107,7 @@
         </main>
     </section>
     <section id="local-loja">
-        <div class="container-local"> 
+        <div class="container-local">
             <form>
                 <h3>Suporte</h3>
                 <div class="form-group">
@@ -117,12 +117,10 @@
                 <div class="form-group-duo">
                     <div class="form-group">
                         <label for="telefone">Telefone:</label>
-                        <input type="tel" id="telefone" name="telefone" 
-                            pattern="^\(\d{2}\) \d{9}$" 
-                            placeholder="(XX) XXXXXXXX" required 
-                            maxlength="14"
+                        <input type="tel" id="telefone" name="telefone" pattern="^\(\d{2}\) \d{9}$"
+                            placeholder="(XX) XXXXXXXX" required maxlength="14"
                             oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\d{2})(\d{0,9})/, '($1) $2');">
-                        </div>
+                    </div>
                     <div class="form-group">
                         <label for="idade">Data de Nascimento:</label>
                         <input type="date" id="idade" class="form-idade">
@@ -138,40 +136,69 @@
                 </div>
                 <div class="form-group">
                     <input type="submit" value="Enviar">
-                </div> 
+                </div>
             </form>
             <div class="map-container">
                 <div class="mapa">
                     <div class="gmap_canvas">
-                        <div class="mapa"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Av. Dona Renata, 2904 Centro - CEP 13604-000 Araras - SP&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://sprunkiplay.com/">Sprunki Game</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style>
+                        <div class="mapa">
+                            <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0"
+                                    scrolling="no" marginheight="0" marginwidth="0"
+                                    src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=Av. Dona Renata, 2904 Centro - CEP 13604-000 Araras - SP&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                    href="https://sprunkiplay.com/">Sprunki Game</a></div>
+                            <style>
+                                .mapouter {
+                                    position: relative;
+                                    text-align: right;
+                                    width: 100%;
+                                    height: 400px;
+                                }
+
+                                .gmap_canvas {
+                                    overflow: hidden;
+                                    background: none !important;
+                                    width: 100%;
+                                    height: 400px;
+                                }
+
+                                .gmap_iframe {
+                                    height: 400px !important;
+                                }
+                            </style>
                         </div>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </section>
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <section id="rodape">
+        <div class="footer">
+            <div class="colunas-rodape">
+                <h4>Menu</h4>
+                <p>Opção 1</p>
+                <p>Opção 2</p>
+                <p>Opção 3</p>
+            </div>
+            <div class="colunas-rodape">
+                <h4>Menu</h4>
+                <p>Opção 1</p>
+                <p>Opção 2</p>
+                <p>Opção 3</p>
+            </div>
+            <div class="colunas-rodape">
+                <h4>Menu</h4>
+                <p>Opção 1</p>
+                <p>Opção 2</p>
+                <p>Opção 3</p>
+            </div>
+            <div class="colunas-rodape">
+                <h4>Menu</h4>
+                <p>Opção 1</p>
+                <p>Opção 2</p>
+                <p>Opção 3</p>
+            </div>
+        </div>
+</section>
 
 
 
