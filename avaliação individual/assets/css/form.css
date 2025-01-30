@@ -29,7 +29,6 @@ input[type="email"] {
     font-size: 14px; /* Tamanho da fonte */
     border: 2px solid #000000; /* Borda do campo */
     border-radius: 5px; /* Bordas arredondadas */
-    background-color: #E2E2E2;
 }
 
 input[type="date"],
@@ -39,7 +38,7 @@ input[type="tel"] {
     font-size: 14px; /* Tamanho da fonte */
     border: 2px solid #000000; /* Borda do campo */
     border-radius: 5px; /* Bordas arredondadas */
-    background-color: #E2E2E2;
+    
 }
 
 input[type="submit"] {

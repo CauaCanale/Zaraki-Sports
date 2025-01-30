@@ -19,8 +19,7 @@
 .footer {
     display: flex;
     justify-content: center;
-    gap: 50px; /* Ajuste o espaçamento entre as colunas */
-    flex-wrap: wrap; /* Permite que as colunas se ajustem quando necessário */
+    gap: 10px; /* Ajuste o espaçamento entre as colunas */
 }
 
 .colunas-rodape {
