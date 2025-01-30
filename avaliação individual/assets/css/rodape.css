@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
+* {
     margin: 0;
-    padding: 0; 
+    padding: 0;
     font-family: "inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -10,18 +10,50 @@
     list-style: none;
 }
 
-#rodape{
+#rodape {
     margin-top: 180px; /* Espaço de 200px do topo */
     background-color: #e2e2e2; /* Cor de fundo do rodapé */
     padding: 50px 0;
 }
 
-.footer{
+.footer {
     display: flex;
     justify-content: center;
-    gap: 200px;
+    gap: 50px; /* Ajuste o espaçamento entre as colunas */
+    flex-wrap: wrap; /* Permite que as colunas se ajustem quando necessário */
+}
+
+.colunas-rodape {
+    flex: 1 1 22%; /* As colunas ocupam 22% da largura da tela */
+    padding: 0 20px; /* Adiciona padding interno nas colunas */
+    text-align: center; /* Centraliza o conteúdo nas colunas */
+    margin-bottom: 20px; /* Espaçamento inferior entre as colunas */
 }
 
 .colunas-rodape h4 {
-    margin-bottom: 10px; /* Margem abaixo do título */
+    margin-bottom: 20px; /* Margem abaixo do título */
+}
+
+/* Para telas menores (até 768px de largura) */
+@media (max-width: 768px) {
+    .footer {
+        gap: 30px; /* Reduz o espaçamento entre as colunas */
+        justify-content: center; /* Centraliza as colunas */
+    }
+
+    .colunas-rodape {
+        flex: 1 1 45%; /* Cada coluna ocupa 45% da largura da tela em dispositivos médios */
+    }
+}
+
+/* Para telas muito pequenas (até 480px de largura) */
+@media (max-width: 480px) {
+    .footer {
+        gap: 10px; /* Diminui o espaçamento entre as colunas */
+        justify-content: center; /* Centraliza as colunas */
+    }
+
+    .colunas-rodape {
+        flex: 1 1 100%; /* Cada coluna ocupa 100% da largura da tela */
+    }
 }

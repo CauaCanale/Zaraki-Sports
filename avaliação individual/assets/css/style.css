@@ -169,3 +169,149 @@
     -webkit-line-clamp: 4; /* Máximo de 4 linhas da descrição */
     -webkit-box-orient: vertical;
 }
+
+
+
+
+
+
+/* Responsividade para telas pequenas (768px e 480px) */
+@media (max-width: 1000px) {
+    /* Ajustes no menu */
+    header nav {
+        padding: 10px 0;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+
+    .menu li a {
+        font-size: 16px;
+        padding: 6px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .foto-perfil li a {
+        font-size: 30px;
+    }
+
+    /* Ajuste da imagem do banner */
+    .banner-principal {
+        height: 40vh;
+    }
+
+    /* Ajuste da imagem da sinopse */
+    .img-sinopse {
+        width: 100%; /* Largura 100% da tela */
+        height: 400px; /* Altura fixa para a imagem */
+        object-fit: cover; /* Ajusta a imagem para manter proporções */
+        max-width: 100%; /* Garante que a largura da imagem não ultrapasse o limite */
+        max-height: 400px; /* Garante que a altura da imagem não ultrapasse 400px */
+    }
+
+    /* Ajuste no texto da sinopse */
+    .text {
+        font-size: 14px;
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .text h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    #carros-destaque .titulo {
+        font-size: 20px;
+        padding-top: 30px;
+    }
+
+    /* Ajuste nos cards para telas menores */
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cards-1 {
+        width: 90%; /* Ajusta a largura dos cards para ocupar 90% da tela */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Ajustes no menu */
+    header nav {
+        padding: 10px 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column; /* Coloca as opções em linha vertical */
+        gap: 15px;
+        font-size: 14px; /* Tamanho reduzido da fonte */
+    }
+
+    .menu li a {
+        padding: 6px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .foto-perfil li a {
+        font-size: 25px;
+    }
+
+    /* Ajuste da imagem do banner */
+    .banner-principal {
+        height: 35vh;
+    }
+
+    /* Ajuste da imagem da sinopse */
+    .img-sinopse {
+        width: 100%; /* Largura 100% da tela */
+        height: 400px; /* Altura fixa para a imagem */
+        object-fit: cover; /* Ajusta a imagem para manter proporções */
+        max-width: 100%; /* Garante que a largura da imagem não ultrapasse o limite */
+        max-height: 400px; /* Garante que a altura da imagem não ultrapasse 400px */
+    }
+
+    /* Ajuste no texto da sinopse */
+    .text {
+        font-size: 12px; /* Tamanho da fonte ajustado */
+        text-align: center;
+        padding-left: 10px;
+    }
+
+    .text h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    #carros-destaque .titulo {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    /* Ajuste nos cards para telas menores */
+    .container-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .cards-1 {
+        width: 100%; /* Ajusta os cards para ocupar toda a largura da tela */
+    }
+}

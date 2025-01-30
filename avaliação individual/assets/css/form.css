@@ -71,3 +71,49 @@ form h3{
     margin: 0px 10px 15px 0px;
     font-weight: 700;
 }
+
+
+
+
+/* Responsividade geral para telas pequenas */
+@media (max-width: 1000px) {
+    .container-local {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="date"] {
+        width: 100%; /* Deixa os campos de texto ocuparem toda a largura */
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px 0; /* Ajusta o padding */
+    }
+}
+
+
+/* Para telas menores (até 480px) */
+@media (max-width: 480px) {
+    .container-local {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group input[type="date"] {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 14px 0; /* Ajusta o padding */
+    }
+}
