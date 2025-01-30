@@ -119,7 +119,7 @@
 .container-cards {
     display: flex; 
     justify-content: center; 
-    gap: 150px; /* Ajusta para um espaçamento mais razoável entre os cards */
+    gap: 100px; /* Ajusta para um espaçamento mais razoável entre os cards */
 }
 
 /* Estilização de cada card */
