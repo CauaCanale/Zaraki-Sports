@@ -169,7 +169,3 @@
     -webkit-line-clamp: 4; /* Máximo de 4 linhas da descrição */
     -webkit-box-orient: vertical;
 }
-
-.container-local h3{
-    text-transform: uppercase;
-}

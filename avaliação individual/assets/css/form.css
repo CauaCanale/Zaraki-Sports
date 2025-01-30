@@ -4,13 +4,15 @@
     font-family: "inter", sans-serif;
 }
 
-.container-local h3 {
-    padding-top: 40px;
-    padding-bottom: 20px;
+.container-local {
+    display: flex; /* Usar flexbox para o layout */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 200px;
+    gap: 50px; /* Espaçamento entre o formulário e o mapa */
 }
 
 .form-group {
-    margin-bottom: 20px; /* Espaço entre os campos */
+    margin-bottom: 10px; /* Espaço entre os campos */
 }
 
 label {
@@ -19,41 +21,52 @@ label {
     font-weight: bold; /* Deixa o texto do label em negrito */
 }
 
-input[type="text"] {
-    width: 100%; /* Faz o campo ocupar toda a largura disponível */
-    width: 50%;
+input[type="text"],
+input[type="email"] {
+    width: 400px;
     padding: 5px; /* Espaçamento interno */
-    font-size: 16px; /* Tamanho da fonte */
+    font-size: 14px; /* Tamanho da fonte */
     border: 2px solid #000000; /* Borda do campo */
     border-radius: 5px; /* Bordas arredondadas */
     background-color: #E2E2E2;
 }
 
-input.half-width {
-    width: 30%; /* Largura do campo "Idade" */
-    display: inline-block; /* Permite que o campo fique ao lado de outro */
+input[type="date"],
+input[type="tel"] {
+    width: 190px;
+    padding: 5px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    border: 2px solid #000000; /* Borda do campo */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #E2E2E2;
 }
 
 input[type="submit"] {
-    padding: 10px 15px; /* Espaçamento interno do botão */
-    font-size: 16px; /* Tamanho da fonte do botão */
+    padding: 10px 170px; /* Espaçamento interno do botão */
+    font-size: 14px; /* Tamanho da fonte do botão */
     background-color: #28a745; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     border: none; /* Remove a borda padrão */
-    border-radius: 4px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-transform: uppercase;
 }
 
 input[type="submit"]:hover {
-    background-color: #218838; /* Cor do botão ao passar o mouse */
+    background-color: #228b39; /* Cor do botão ao passar o mouse */
 }
 
-.container-local h3{
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-.mapa{
+/* Agrupar os campos de telefone e data na mesma linha */
+.form-group-duo {
     display: flex;
-    width: 400px;
-    height: 400px;
+    gap: 20px; /* Espaçamento entre os campos */
+}
+
+.mapa {
+    width: 700px;
+}
+
+form h3{
+    text-transform: uppercase;
+    margin: 0px 10px 15px 0px;
+    font-weight: 700;
 }
