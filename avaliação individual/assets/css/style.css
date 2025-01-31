@@ -176,7 +176,7 @@
 
 
 /* Responsividade para telas pequenas (768px e 480px) */
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     /* Ajustes no menu */
     header nav {
         padding: 10px 0;

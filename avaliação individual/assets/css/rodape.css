@@ -34,7 +34,7 @@
 }
 
 /* Para telas menores (até 768px de largura) */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .footer {
         gap: 30px; /* Reduz o espaçamento entre as colunas */
         justify-content: center; /* Centraliza as colunas */
