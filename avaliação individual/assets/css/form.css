@@ -17,7 +17,7 @@
 }
 
 label {
-    display: block; /* Faz o label ocupar toda a largura */
+    display: flex; /* Faz o label ocupar toda a largura */
     margin-bottom: 5px; /* Espaço entre o label e o campo */
     font-weight: bold; /* Deixa o texto do label em negrito */
 }
@@ -42,13 +42,13 @@ input[type="tel"] {
 }
 
 input[type="submit"] {
-    padding: 10px 174px; /* Espaçamento interno do botão */
-    font-size: 14px; /* Tamanho da fonte do botão */
+    padding: 10px 170px; /* Espaçamento interno do botão */
     background-color: #28a745; /* Cor de fundo do botão */
     color: white; /* Cor do texto do botão */
     border: none; /* Remove a borda padrão */
     border-radius: 5px; /* Bordas arredondadas */
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 input[type="submit"]:hover {
@@ -61,10 +61,6 @@ input[type="submit"]:hover {
     gap: 20px; /* Espaçamento entre os campos */
 }
 
-.mapa {
-    width: 600px;
-}
-
 form h3{
     text-transform: uppercase;
     margin: 0px 10px 15px 0px;
@@ -75,7 +71,14 @@ form h3{
 
 
 /* Responsividade geral para telas pequenas */
-@media (max-width: 1200px) {
+@media (max-width: 1080px) {
+    * {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+        font-family: "inter", sans-serif;
+    }
+    
     .container-local {
         flex-direction: column;
         align-items: center;
@@ -84,53 +87,29 @@ form h3{
 
     .form-group input[type="text"],
     .form-group input[type="email"],
-    .form-group input[type="tel"],
-    .form-group input[type="date"] {
-        width: 100%; /* Deixa os campos de texto ocuparem toda a largura */
+    .form-group input[type="tel"]{
+        width: 90%; /* Deixa os campos de texto ocuparem toda a largura */
+    }
+   
+    .form-group input[type="submit"]{
+        width: 90%;
+        margin-top: 10px;
     }
 
- .map {
-        min-height: 500px; /* Ajuste a altura mínima do mapa */
-        height: 80vh; /* Tente aumentar a altura para 80% da altura da tela */
-        width: 100%;
-        /* Garante que o mapa ocupe 100% da largura */
-        margin: 0; /* Remove margens externas */
-        padding: 0; /* Remove padding interno, caso haja */
+    .form-group input[type="date"]{
+        width: 75%;
+    }
+
+    .form-group-duo{
+        gap: 10px;
     }
 
     input[type="submit"] {
         width: 100%;
         padding: 12px 0; /* Ajusta o padding */
     }
+    
 }
 
 
-/* Para telas menores (até 480px) */
-@media (max-width: 480px) {
-    .container-local {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
 
-    .form-group input[type="text"],
-    .form-group input[type="email"],
-    .form-group input[type="tel"],
-    .form-group input[type="date"] {
-        width: 100%;
-    }
-
-    .map {
-        min-height: 500px; /* Ajuste a altura mínima do mapa */
-        height: 80vh; /* Tente aumentar a altura para 80% da altura da tela */
-        width: 100%;
-        /* Garante que o mapa ocupe 100% da largura */
-        margin: 0; /* Remove margens externas */
-        padding: 0; /* Remove padding interno, caso haja */
-    }
-
-    input[type="submit"] {
-        width: 100%;
-        padding: 14px 0; /* Ajusta o padding */
-    }
-}

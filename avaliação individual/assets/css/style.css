@@ -12,7 +12,7 @@
     }
     
     header nav{
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         padding: 20px 0;
         display: flex; 
         justify-content: space-around;
@@ -170,7 +170,12 @@
 
 
 @media (max-width: 1080px) {
-
+    * {
+        margin: 0;
+        padding: 0;
+        gap: 0;
+    }
+    
     header nav{
         padding: 10px 0 0 0;
         display: flex;
@@ -194,7 +199,7 @@
     }
 
     .banner-principal{
-        height: 35vh;
+        height: 40vh;
     }
 
     .img-sinopse{
@@ -234,6 +239,7 @@
         gap: 50px; 
         flex-direction: column;
         align-items: center;
+        
     }
 
     .cards-1 {
