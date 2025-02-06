@@ -185,17 +185,17 @@
 
     .menu{
         gap: 10px;
-        font-size: 17px;
+        font-size: 14px;
     }
     
     .logo{
         display: flex;
-        width:50px;
-        height: 50px;   
+        width:35px;
+        height: 35px;   
     }
 
     .foto-perfil li a{   
-        font-size: 35px;
+        font-size: 25px;
     }
 
     .banner-principal{
