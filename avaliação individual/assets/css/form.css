@@ -58,7 +58,7 @@ input[type="submit"]:hover {
 /* Agrupar os campos de telefone e data na mesma linha */
 .form-group-duo {
     display: flex;
-    gap: 20px; /* Espaçamento entre os campos */
+    gap: 0; /* Espaçamento entre os campos */
 }
 
 form h3{
@@ -75,7 +75,6 @@ form h3{
     * {
         margin: 0;
         padding: 0;
-        gap: 0;
         font-family: "inter", sans-serif;
     }
     
@@ -88,24 +87,25 @@ form h3{
     .form-group input[type="text"],
     .form-group input[type="email"],
     .form-group input[type="tel"]{
-        width: 90%; /* Deixa os campos de texto ocuparem toda a largura */
+        width: 94%; /* Deixa os campos de texto ocuparem toda a largura */
     }
-   
-    .form-group input[type="submit"]{
-        width: 90%;
-        margin-top: 10px;
+    
+    #assunto{
+        padding: 40px;
     }
+
+    
 
     .form-group input[type="date"]{
-        width: 75%;
+        width: 85%;
     }
 
-    .form-group-duo{
-        gap: 10px;
-    }
+    
+
+    
 
     input[type="submit"] {
-        width: 100%;
+        width: 94%;
         padding: 12px 0; /* Ajusta o padding */
     }
     
