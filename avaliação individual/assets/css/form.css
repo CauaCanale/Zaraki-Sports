@@ -94,11 +94,11 @@ form h3{
     }
 
     .form-group input[type="tel"]{
-        width: 95%;
+        width: 85%;
     }
 
     .form-group input[type="date"]{
-        width: 95%;
+        width: 100%;
     }
 
     
