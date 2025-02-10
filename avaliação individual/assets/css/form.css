@@ -58,7 +58,7 @@ input[type="submit"]:hover {
 /* Agrupar os campos de telefone e data na mesma linha */
 .form-group-duo {
     display: flex;
-    gap: 0; /* Espaçamento entre os campos */
+    gap: 20px; /* Espaçamento entre os campos */
 }
 
 form h3{
@@ -66,9 +66,6 @@ form h3{
     margin: 0px 10px 15px 0px;
     font-weight: 700;
 }
-
-
-
 
 /* Responsividade geral para telas pequenas */
 @media (max-width: 1080px) {
@@ -100,10 +97,6 @@ form h3{
     .form-group input[type="date"]{
         width: 100%;
     }
-
-    
-
-    
 
     input[type="submit"] {
         width: 100%;

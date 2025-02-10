@@ -2,8 +2,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");  
     
     *{
-        margin: 0;
-        padding: 0; 
+        
         font-family: "inter", sans-serif;
         font-optical-sizing: auto;
         font-weight: 700;
@@ -20,7 +19,6 @@
     }
     
     .menu{
-        list-style: none;
         display: flex;
         gap:80px;
         font-size: 20px;
@@ -49,9 +47,7 @@
     }
 
     .foto-perfil li a{
-        text-decoration: none;
         color: #000000;
-        padding: 8px;
         font-size: 40px;
     }
     
@@ -60,12 +56,11 @@
         width: 100%; /* A imagem ocupa 100% da largura do contêiner */
         height: 100%; /* A imagem ocupa 100% da altura do contêiner */
         object-fit: cover; /* Cobre todo o contêiner, mantendo a proporção */
-        display: block;
     }
    
     .banner-principal {
         height: calc(100vh - 90px); /* Ajusta a altura do banner subtraindo a altura do cabeçalho */
-        overflow: hidden; /* Garante que nada transborde do contêiner */
+        overflow: hidden; 
     }
 
     .img-sinopse{
@@ -79,7 +74,7 @@
     .container{
         display: flex;
         align-items: center;
-        width: 100%; /* Largura total */
+        width: 90%; /* Largura total */
         padding: 50px 0 0 0;
     }
     
@@ -142,9 +137,8 @@
 
 /* Estilização do figcaption */
 #carros-destaque figcaption {
-    padding: 10px 10px 5px 10px; /* Ajusta o padding inferior para 5px ou menos */
+    padding: 10px 10px 5px 10px; 
     display: flex;
-    flex-grow: 1; /* Para usar todo o espaço disponível dentro da borda do card */
     flex-direction: column;
 }
 
@@ -158,7 +152,7 @@
 /* Estilização da descrição do card */
 #carros-destaque figcaption p {
     line-height: 1.4; /* Ajusta do espaçamento entre linhas para reduzir o espaço */
-    overflow: hidden; /* Esconde o restante da descrição quando passar de 4 linhas */
+    overflow: hidden; 
 }
 
 /* limitar a descrição a um número específico de linhas, você pode usar o seguinte: */
